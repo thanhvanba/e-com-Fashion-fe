@@ -2,7 +2,7 @@ import { Button } from 'antd';
 export default function Home() {
   return (
     <>
-      <a href="/products">
+      <a href="/product">
         product details
       </a>
 
