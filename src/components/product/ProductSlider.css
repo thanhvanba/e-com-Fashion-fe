@@ -1,0 +1,49 @@
+/* .slider-container {
+    position: relative;
+    /* Để chứa vị trí tuyệt đối của dots *
+}
+
+.slick-dots {
+    position: absolute;
+    /* Đặt dots ở vị trí tuyệt đối 
+    left: 0;
+    /* Khoảng cách từ lề trái 
+    top: 40%;
+    /* Đặt ở giữa theo chiều dọc 
+    transform: translateY(-50%);
+    /* Căn giữa theo chiều dọc *
+    z-index: 1;
+    /* Đảm bảo dots nằm trên các slide 
+    display: flex !important;
+    /* Sử dụng flexbox để sắp xếp các dots theo chiều dọc 
+    flex-direction: column;
+    /* Sắp xếp các dots theo chiều dọc 
+}
+
+.slick-dots li {
+    margin-bottom: 10px;
+    /* Thêm khoảng cách giữa các dots *
+} */
+
+/* Mặc định ẩn slider 2 */
+#slider2 {
+    display: none;
+}
+
+/* Khi màn hình lớn hơn 400px, hiển thị slider 1, ẩn slider 2 */
+@media (min-width: 1025px) {
+    #slider2 {
+        display: none;
+    }
+}
+
+/* Khi màn hình nhỏ hơn hoặc bằng 400px, hiển thị slider 2, ẩn slider 1 */
+@media (max-width: 1024px) {
+    #slider1 {
+        display: none;
+    }
+
+    #slider2 {
+        display: block;
+    }
+}

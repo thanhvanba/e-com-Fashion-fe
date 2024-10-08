@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/header";
+import Header from "@/components/header";
+import StyledComponentsRegistry from "@/lib/antd.registry";
 
 // const geistSans = localFont({
 //   src: "../public/assets/fonts/GeistVF.woff",
@@ -27,8 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
-        <Header/>
-        {children}
+        <StyledComponentsRegistry>
+          <Header />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
